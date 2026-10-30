@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Practyice Bootstrap</title>
+    <meta name="keywords" content="travel agency, online booking, hotel, rooms, facilities, information, room size, restaurant, room beds, holidays, travel">
+    <meta name="description" content="Hotel and product information page with loads of useful information on product, availability and options">
+    <title>Hotel details, information and availability, facilities available, room specifications</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -16,11 +18,11 @@
         <!-- <div class="container border-test"> -->
         <div class="container mx-auto containerHeader">
             <!-- <div class="d-flex flex-wrap">-->
-                <div class="logo border-test"> 
-                    <a href="../index.html" title="Book Your Travel">
-                        <img src="../assets/images/logo.png" alt="company logo">
-                    </a>
-                </div>
+            <div class="logo border-test"> 
+                <a href="../index.html" title="homepage for Book Your Travel">
+                    <img src="../assets/images/logo.png" alt="company logo">
+                </a>
+            </div>
 
             <div class="headerEnd border-test">
                 <div class="contact">
@@ -30,8 +32,8 @@
                 <div class="search border-test">
                 <form id="search-form" method="get" action="search-form">
                     <div class="input-with-icon">
-                    <input type="search" class="headerSearch" placeholder="Search entire site here" name="site_search" id="site_search">
-                    <input type="image" id="image" alt="Search" src="../assets/images/search_icon.png" />
+                        <input type="search" class="headerSearch" placeholder="Search entire site here" name="site_search" id="site_search">
+                        <input type="image" id="image" alt="Search icon" src="../assets/images/search_icon.png" />
                     </div>
                 </form>
                 </div>
@@ -130,429 +132,435 @@
 
     </header>
 
-    <main class="mx-auto vw-100 mb-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-9 px-2 my-3">
-                    <!-- <div class="p-5 bg-primary my-3 text-light">carousel and pictures below</div> -->
-    
-    
-                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../assets/images/hotel4.jpg" class="d-block w-100" alt="...">
+    <!-- <main class="mx-auto vw-100 mb-100"> -->
+    <main>
+        <div class="main-class mx-auto vw-100 mb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-9 px-2 my-3">
+                        <!-- <div class="p-5 bg-primary my-3 text-light">carousel and pictures below</div> -->
+        
+        
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/images/hotel4.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/images/hotel1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/images/hotel2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/images/hotel5.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/images/hotel3.jpg" class="d-block w-100" alt="...">
+                                </div>  
+                                <div class="carousel-item">
+                                    <img src="../assets/images/hotel6.jpg" class="d-block w-100" alt="...">
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="../assets/images/hotel1.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../assets/images/hotel2.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../assets/images/hotel5.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../assets/images/hotel3.jpg" class="d-block w-100" alt="...">
-                            </div>  
-                            <div class="carousel-item">
-                                <img src="../assets/images/hotel6.jpg" class="d-block w-100" alt="...">
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
 
-                    <div class="container px-0">
-                        <div class="row">
-                            <!-- <div class="d-flex">by default doesn't wrap -->
-                            <div class="col-12 col-md-3 inner-details-space-top">
-                                <nav class="inner-nav">
-                                    <ul>
-                                        <li class="availability active"><a href="#availability" title="Availability">Availability</a></li>
-                                        <li class="description"><a href="#description" title="Description">Description</a></li>
-                                        <li class="facilities"><a href="#facilities" title="Facilities">Facilities</a></li>
-                                        <li class="location"><a href="#location" title="Location">Location</a></li>
-                                        <li class="reviews"><a href="#reviews" title="Reviews">Reviews</a></li>
-                                        <li class="things-to-do"><a href="#things-to-do" title="Things to do">Things to do</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-12 col-md-9 inner-details-space-top">
-                                <!-- <div class="main-details" style="display: none;"> -->
-                                <article class="main-details">
-                                    <h3>Availability</h3>
-                                    <div class="d-flex">
-                                        <p class="padding-10-bottom">Available rooms from Thurs 29 Nov 2016 to Fri 30 Nov 2016.</p>
-                                        <a href="#" title="Explore our deals" class="gradient-button">Change</a>
-                                    </div>
-                                    <h3 class="space-above">Room types</h3>
-                                    <div class="container px-0">
-                                        <div class="row border-box-details">
-                                            <div class="col-md-7 col-lg-5">
-                                                <img src="../assets/images/room1.jpg" alt="...">
-                                                <!-- <p></p> -->
-                                            </div>
-                                            <div class="col-md-5 col-lg-7">
-                                                <div class="d-lg-flex flex-lg-row">
-                                                    <div class="room-more-info">
-                                                        <h5>Superior Double Room</h5>
-                                                        <p>Prices are per room20 % VAT Included in price</p>
-                                                        <p class="padding-10-bottom">Non-refundableFull English breakfast $ 24.80</p>
-                                                        <a href="#" title="Explore our deals" class="gradient-button">More info</a>
-                                                    </div>
-                                                    <div class="room-short-info">
-                                                        <p>Max: <img src="../assets/images/room2people.png" alt="..."></p>
-                                                        <p>Price: $ 55</p>
-                                                        <p class="padding-10-bottom">Rooms: 01</p>
-                                                        <a href="#" title="Explore our deals" class="gradient-button">Book now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="container px-0">
-                                        <div class="row border-box-details">
-                                            <div class="col-md-7 col-lg-5">
-                                                <img src="../assets/images/room2.jpg" alt="...">
-                                                <!-- <p></p> -->
-                                            </div>
-                                            <div class="col-md-5 col-lg-7">
-                                                <div class="d-lg-flex flex-lg-row">
-                                                    <div class="room-more-info">
-                                                        <h5>Deluxe Single Room</h5>
-                                                        <p>Prices are per room20 % VAT Included in price</p>
-                                                        <p class="padding-10-bottom">Non-refundableFull English breakfast $ 24.80</p>
-                                                        <a href="#" title="Explore our deals" class="gradient-button">More info</a>
-                                                    </div>
-                                                    <div class="room-short-info">
-                                                        <p>Max: <img src="../assets/images/room1person.png" alt="..."></p>
-                                                        <p>Price: $ 55</p>
-                                                        <p class="padding-10-bottom">Rooms: 01</p>
-                                                        <a href="#" title="Explore our deals" class="gradient-button">Book now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="container px-0">
-                                        <div class="row border-box-details">
-                                            <div class="col-md-7 col-lg-5">
-                                                <img src="../assets/images/room1.jpg" alt="...">
-                                                <!-- <p></p> -->
-                                            </div>
-                                            <div class="col-md-5 col-lg-7">
-                                                <div class="d-lg-flex flex-lg-row">
-                                                    <div class="room-more-info">
-                                                        <h5>Superior Double Room</h5>
-                                                        <p>Prices are per room20 % VAT Included in price</p>
-                                                        <p class="padding-10-bottom">Non-refundableFull English breakfast $ 24.80</p>
-                                                        <a href="#" title="Explore our deals" class="gradient-button">More info</a>
-                                                    </div>
-                                                    <div class="room-short-info">
-                                                        <p>Max: <img src="../assets/images/room3people.png" alt="..."></p>
-                                                        <p>Price: $ 55</p>
-                                                        <p class="padding-10-bottom">Rooms: 01</p>
-                                                        <a href="#" title="Explore our deals" class="gradient-button">Book now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="container px-0">
-                                        <div class="row border-box-details">
-                                            <div class="col-md-7 col-lg-5">
-                                                <img src="../assets/images/room2.jpg" alt="...">
-                                                <!-- <p></p> -->
-                                            </div>
-                                            <div class="col-md-5 col-lg-7">
-                                                <div class="d-lg-flex flex-lg-row">
-                                                    <div class="room-more-info">
-                                                        <h5>Superior Double Room</h5>
-                                                        <p>Prices are per room20 % VAT Included in price</p>
-                                                        <p class="padding-10-bottom">Non-refundableFull English breakfast $ 24.80</p>
-                                                        <a href="#" title="Explore our deals" class="gradient-button">More info</a>
-                                                    </div>
-                                                    <div class="room-short-info">
-                                                        <p>Max: <img src="../assets/images/room2people.png" alt="..."></p>
-                                                        <p>Price: $ 55</p>
-                                                        <p class="padding-10-bottom">Rooms: 01</p>
-                                                        <a href="#" title="Explore our deals" class="gradient-button">Book now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="main-details">                                    
-                                    <h3>General</h3>
-                                    <p class="padding-space-bottom">The Best Ipsum hotel  features over 1,000 luxuriously appointed, individually styled rooms, suites and apartments, each containing unique works of art. Accommodation at the hotel includes air conditioning in all the rooms, private bathroom with heated mirrors, hair dryer, power shower, BT Openzone Wi-Fi, coffee and tea making facilities, complimentary toiletries, Egyptian linen, flat Screen LCD TV with free view, work desk, 24 hour room service.</p>
-                                    <h3>Check-in</h3>
-                                    <p class="padding-space-bottom">From 15:00 hours</p>
-                                    <h3>Check-out</h3>
-                                    <p class="padding-space-bottom">Untill 12:00 hours </p>
-                                    <h3>Cancellation / Prepayment</h3>
-                                    <p class="padding-space-bottom">Cancellation and prepayment policies vary according to room type. Please check the <a href="#">room conditions</a> when selecting your room.</p>
-                                    <h3>Children and extra beds</h3>
-                                    <p class="padding-space-bottom"><strong>Free!</strong> All children under 8 years stay free of charge when using existing beds.<strong>Free!</strong> All children under 2 years stay free of charge for children's cots/cribs.All older children or adults are charged USD 40 per person per night for extra beds.The maximum number of extra beds/children's cots permitted in a room is 1.Any type of extra bed or child's cot/crib is upon request and needs to be confirmed by management.Supplements are not calculated automatically in the total costs and will have to be paid for separately when checking out.</p>
-                                    <h3>Pets</h3>
-                                    <p class="padding-space-bottom">Pets are allowed. Charges may be applicable.</p>
-                                    <h3>Accepted credit cards</h3>
-                                    <p class="padding-space-bottom">American Express, Visa, Euro/Mastercard, Diners ClubThe hotel reserves the right to pre-authorise credit cards prior to arrival.</p>
-
-                                </article>
-                                <article class="main-details">                                    
-                                    <h3>Facilities</h3>
-	
-                                        <ul class="three-col">
-                                            <li>Kitchenette</li>
-                                            <li>Ironing board</li>
-                                            <li>Catering services</li>
-                                            <li>Beachfront</li>
-                                            <li>Hotspots</li>
-                                            <li>Exhibition/convention floor</li>
-                                            <li>Restaurant</li>
-                                            <li>Room service - full menu</li>
-                                            <li>Courtyard</li>
-                                            <li>Lounges/bars</li>
-                                            <li>Laundry/Valet service</li>
-                                            <li>Airport Shuttle Service</li>
-                                            <li>Complimentary breakfast</li>
-                                            <li>Valet cleaning</li>
-                                            <li>Car hire</li>
+                        <div class="container px-0">
+                            <div class="row">
+                                <!-- <div class="d-flex">by default doesn't wrap -->
+                                <nav class="col-12 col-md-3 inner-details-space-top inner-nav">
+                                    <!-- <nav class="inner-nav"> -->
+                                        <ul>
+                                            <li class="availability active"><a href="#availability" title="Availability">Availability</a></li>
+                                            <li class="description"><a href="#description" title="Description">Description</a></li>
+                                            <li class="facilities"><a href="#facilities" title="Facilities">Facilities</a></li>
+                                            <li class="location"><a href="#location" title="Location">Location</a></li>
+                                            <li class="reviews"><a href="#reviews" title="Reviews">Reviews</a></li>
+                                            <li class="things-to-do"><a href="#things-to-do" title="Things to do">Things to do</a></li>
                                         </ul>
-                                        <br>
-
-                                    <h3>Activities</h3>
-                                    <p class="padding-space-bottom">Tennis court, Sauna, Fitness centre, Massage </p>
-                                    <h3>Internet</h3>
-                                    <p class="padding-space-bottom"><strong>Free!</strong> WiFi is available in all areas and is free of charge. </p>
-                                    <h3>Parking</h3>
-                                    <p class="padding-space-bottom">Private parking is possible at a location nearby (reservation is not needed) and costs USD 28.80 per day.</p>
-                                </article>
-                                <article class="main-details">
-                                    <div class="gmap" id="map_canvas"></div>
-                                </article>
-                                <article class="main-details">
-                                    <h3>Guest reviews</h3>
-                                    <div class="d-flex pb-4 pt-3 border-box-details">
-                                        <div class="d-flex flex-wrap details-review-l">
-                                            <img src="../assets/images/avatar.jpg" alt="" class="p-1">
-                                            <p class="p-1"><b>Anonymous</b><br>Solo TravellerNorway <br>22/06/2016</p>
+                                    <!-- </nav> -->
+                                </nav>
+                                <div class="col-12 col-md-9 inner-details-space-top">
+                                    <!-- <div class="main-details" style="display: none;"> -->
+                                    <section class="main-details">
+                                        <h3>Availability</h3>
+                                        <div class="d-flex">
+                                            <p class="padding-10-bottom">Available rooms from Thurs 29 Nov 2016 to Fri 30 Nov 2016.</p>
+                                            <a href="#" title="Explore our deals" class="gradient-button">Change</a>
                                         </div>
-                                        <div class="details-review-r">
-                                            <p class="review-pro p-t-3">It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p>
-                                            <p class="review-con">noisy neigbourghs spoilt the rather calm environment</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex pb-4 pt-3 border-box-details">
-                                        <div class="d-flex flex-wrap details-review-l">
-                                            <img src="../assets/images/avatar.jpg" alt="" class="p-1">
-                                            <p class="p-1"><b>Anonymous</b><br>Solo TravellerNorway <br>22/06/2016</p>
-                                        </div>
-                                        <div class="details-review-r">
-                                            <p class="review-pro">It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p>
-                                            <p class="review-con">noisy neigbourghs spoilt the rather calm environment</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex pb-4 pt-3 border-box-details">
-                                        <div class="d-flex flex-wrap details-review-l">
-                                            <img src="../assets/images/avatar.jpg" alt="" class="p-1">
-                                            <p class="p-1"><b>Anonymous</b><br>Solo TravellerNorway <br>22/06/2016</p>
-                                        </div>
-                                        <div class="details-review-r">
-                                            <p class="review-pro">It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p>
-                                            <p class="review-con">noisy neigbourghs spoilt the rather calm environment</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex pb-4 pt-3 border-box-details">
-                                        <div class="d-flex flex-wrap details-review-l">
-                                            <img src="../assets/images/avatar.jpg" alt="" class="p-1">
-                                            <p class="p-1"><b>Anonymous</b><br>Solo TravellerNorway <br>22/06/2016</p>
-                                        </div>
-                                        <div class="details-review-r">
-                                            <p class="review-pro">It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p>
-                                            <p class="review-con">noisy neigbourghs spoilt the rather calm environment</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex pb-4 pt-3 border-box-details">
-                                        <div class="d-flex flex-wrap details-review-l">
-                                            <img src="../assets/images/avatar.jpg" alt="" class="p-1">
-                                            <p class="p-1"><b>Anonymous</b><br>Solo TravellerNorway <br>22/06/2016</p>
-                                        </div>
-                                        <div class="details-review-r">
-                                            <p class="review-pro">It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p>
-                                            <p class="review-con">noisy neigbourghs spoilt the rather calm environment</p>
-                                        </div>
-                                    </div>
-
-                                </article>
-                                <article class="main-details">
-                                    <h3>London</h3>
-                                    <img src="../assets/images/london1.jpg" alt="" class="pb-3">
-                                    <p class="pb-2"><strong>London is a diverse and exciting city with some of the best sights and attractions in the world. </strong></p>
-                                    <p class="pb-4">See London from above on the London Eye; meet a celebrity at Madame Tussauds; examine some of the world's most precious treasures at the British Museum or come face-to-face with the dinosaurs at the Natural History Museum.</p>
-                                    <h3>Sports and nature</h3>
-                                    <img src="../assets/images/london2.jpg" alt="" class="pb-3">
-                                    <p class="pb-2"><strong>London is a diverse and exciting city with some of the best sights and attractions in the world. </strong></p>
-                                    <p class="pb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
-                                    <h3>Nightlife</h3>
-                                    <img src="../assets/images/london1.jpg" alt="" class="pb-3">
-                                    <p class="pb-2"><strong>London is a diverse and exciting city with some of the best sights and attractions in the world. </strong></p>
-                                    <p class="pb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
-                                    <h3>Culture and history</h3>
-                                    <img src="../assets/images/london1.jpg" alt="" class="pb-3">
-                                    <p class="pb-2"><strong>London is a diverse and exciting city with some of the best sights and attractions in the world. </strong></p>
-                                    <p class="pb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
-                               </article>
+                                        <h3 class="space-above">Room types</h3>
+                                        <article class="container px-0">
+                                            <div class="row border-box-details">
+                                                <div class="col-md-7 col-lg-5">
+                                                    <img src="../assets/images/room1.jpg" alt="...">
+                                                    <!-- <p></p> -->
+                                                </div>
+                                                <div class="col-md-5 col-lg-7">
+                                                    <div class="d-lg-flex flex-lg-row">
+                                                        <div class="room-more-info">
+                                                            <h5>Superior Double Room</h5>
+                                                            <p>Prices are per room20 % VAT Included in price</p>
+                                                            <p class="padding-10-bottom">Non-refundableFull English breakfast $ 24.80</p>
+                                                            <a href="#" title="Explore our deals" class="gradient-button">More info</a>
+                                                        </div>
+                                                        <div class="room-short-info">
+                                                            <p>Max: <img src="../assets/images/room2people.png" alt="..."></p>
+                                                            <p>Price: $ 55</p>
+                                                            <p class="padding-10-bottom">Rooms: 01</p>
+                                                            <a href="#" title="Explore our deals" class="gradient-button">Book now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <articel class="container px-0">
+                                            <div class="row border-box-details">
+                                                <div class="col-md-7 col-lg-5">
+                                                    <img src="../assets/images/room2.jpg" alt="...">
+                                                    <!-- <p></p> -->
+                                                </div>
+                                                <div class="col-md-5 col-lg-7">
+                                                    <div class="d-lg-flex flex-lg-row">
+                                                        <div class="room-more-info">
+                                                            <h5>Deluxe Single Room</h5>
+                                                            <p>Prices are per room20 % VAT Included in price</p>
+                                                            <p class="padding-10-bottom">Non-refundableFull English breakfast $ 24.80</p>
+                                                            <a href="#" title="Explore our deals" class="gradient-button">More info</a>
+                                                        </div>
+                                                        <div class="room-short-info">
+                                                            <p>Max: <img src="../assets/images/room1person.png" alt="..."></p>
+                                                            <p>Price: $ 55</p>
+                                                            <p class="padding-10-bottom">Rooms: 01</p>
+                                                            <a href="#" title="Explore our deals" class="gradient-button">Book now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </articel>
+                                        <articel class="container px-0">
+                                            <div class="row border-box-details">
+                                                <div class="col-md-7 col-lg-5">
+                                                    <img src="../assets/images/room1.jpg" alt="...">
+                                                    <!-- <p></p> -->
+                                                </div>
+                                                <div class="col-md-5 col-lg-7">
+                                                    <div class="d-lg-flex flex-lg-row">
+                                                        <div class="room-more-info">
+                                                            <h5>Superior Double Room</h5>
+                                                            <p>Prices are per room20 % VAT Included in price</p>
+                                                            <p class="padding-10-bottom">Non-refundableFull English breakfast $ 24.80</p>
+                                                            <a href="#" title="Explore our deals" class="gradient-button">More info</a>
+                                                        </div>
+                                                        <div class="room-short-info">
+                                                            <p>Max: <img src="../assets/images/room3people.png" alt="..."></p>
+                                                            <p>Price: $ 55</p>
+                                                            <p class="padding-10-bottom">Rooms: 01</p>
+                                                            <a href="#" title="Explore our deals" class="gradient-button">Book now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </articel>
+                                        <articel class="container px-0">
+                                            <div class="row border-box-details">
+                                                <div class="col-md-7 col-lg-5">
+                                                    <img src="../assets/images/room2.jpg" alt="...">
+                                                    <!-- <p></p> -->
+                                                </div>
+                                                <div class="col-md-5 col-lg-7">
+                                                    <div class="d-lg-flex flex-lg-row">
+                                                        <div class="room-more-info">
+                                                            <h5>Superior Double Room</h5>
+                                                            <p>Prices are per room20 % VAT Included in price</p>
+                                                            <p class="padding-10-bottom">Non-refundableFull English breakfast $ 24.80</p>
+                                                            <a href="#" title="Explore our deals" class="gradient-button">More info</a>
+                                                        </div>
+                                                        <div class="room-short-info">
+                                                            <p>Max: <img src="../assets/images/room2people.png" alt="..."></p>
+                                                            <p>Price: $ 55</p>
+                                                            <p class="padding-10-bottom">Rooms: 01</p>
+                                                            <a href="#" title="Explore our deals" class="gradient-button">Book now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </articel>
+                                    </section>
+                                    <section class="main-details">                                    
+                                        <h3>General</h3>
+                                        <p class="padding-space-bottom">The Best Ipsum hotel  features over 1,000 luxuriously appointed, individually styled rooms, suites and apartments, each containing unique works of art. Accommodation at the hotel includes air conditioning in all the rooms, private bathroom with heated mirrors, hair dryer, power shower, BT Openzone Wi-Fi, coffee and tea making facilities, complimentary toiletries, Egyptian linen, flat Screen LCD TV with free view, work desk, 24 hour room service.</p>
+                                        <h3>Check-in</h3>
+                                        <p class="padding-space-bottom">From 15:00 hours</p>
+                                        <h3>Check-out</h3>
+                                        <p class="padding-space-bottom">Untill 12:00 hours </p>
+                                        <h3>Cancellation / Prepayment</h3>
+                                        <p class="padding-space-bottom">Cancellation and prepayment policies vary according to room type. Please check the <a href="#">room conditions</a> when selecting your room.</p>
+                                        <h3>Children and extra beds</h3>
+                                        <p class="padding-space-bottom"><strong>Free!</strong> All children under 8 years stay free of charge when using existing beds.<strong>Free!</strong> All children under 2 years stay free of charge for children's cots/cribs.All older children or adults are charged USD 40 per person per night for extra beds.The maximum number of extra beds/children's cots permitted in a room is 1.Any type of extra bed or child's cot/crib is upon request and needs to be confirmed by management.Supplements are not calculated automatically in the total costs and will have to be paid for separately when checking out.</p>
+                                        <h3>Pets</h3>
+                                        <p class="padding-space-bottom">Pets are allowed. Charges may be applicable.</p>
+                                        <h3>Accepted credit cards</h3>
+                                        <p class="padding-space-bottom">American Express, Visa, Euro/Mastercard, Diners ClubThe hotel reserves the right to pre-authorise credit cards prior to arrival.</p>
+                                    </section>
+                                    <section class="main-details">                                    
+                                        <h3>Facilities</h3>
+                                            <ul class="three-col">
+                                                <li>Kitchenette</li>
+                                                <li>Ironing board</li>
+                                                <li>Catering services</li>
+                                                <li>Beachfront</li>
+                                                <li>Hotspots</li>
+                                                <li>Exhibition/convention floor</li>
+                                                <li>Restaurant</li>
+                                                <li>Room service - full menu</li>
+                                                <li>Courtyard</li>
+                                                <li>Lounges/bars</li>
+                                                <li>Laundry/Valet service</li>
+                                                <li>Airport Shuttle Service</li>
+                                                <li>Complimentary breakfast</li>
+                                                <li>Valet cleaning</li>
+                                                <li>Car hire</li>
+                                            </ul>
+                                            <br>
+                                        <h3>Activities</h3>
+                                        <p class="padding-space-bottom">Tennis court, Sauna, Fitness centre, Massage </p>
+                                        <h3>Internet</h3>
+                                        <p class="padding-space-bottom"><strong>Free!</strong> WiFi is available in all areas and is free of charge. </p>
+                                        <h3>Parking</h3>
+                                        <p class="padding-space-bottom">Private parking is possible at a location nearby (reservation is not needed) and costs USD 28.80 per day.</p>
+                                    </section>
+                                    <section class="main-details">
+                                        <div class="gmap" id="map_canvas"></div>
+                                    </section>
+                                    <section class="main-details">
+                                        <h3>Guest reviews</h3>
+                                        <article class="d-flex pb-4 pt-3 border-box-details">
+                                            <div class="d-flex flex-wrap details-review-l">
+                                                <img src="../assets/images/avatar.jpg" alt="" class="p-1">
+                                                <p class="p-1"><b>Anonymous</b><br>Solo TravellerNorway <br>22/06/2016</p>
+                                            </div>
+                                            <div class="details-review-r">
+                                                <p class="review-pro p-t-3">It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p>
+                                                <p class="review-con">noisy neigbourghs spoilt the rather calm environment</p>
+                                            </div>
+                                        </article>
+                                        <article class="d-flex pb-4 pt-3 border-box-details">
+                                            <div class="d-flex flex-wrap details-review-l">
+                                                <img src="../assets/images/avatar.jpg" alt="" class="p-1">
+                                                <p class="p-1"><b>Anonymous</b><br>Solo TravellerNorway <br>22/06/2016</p>
+                                            </div>
+                                            <div class="details-review-r">
+                                                <p class="review-pro">It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p>
+                                                <p class="review-con">noisy neigbourghs spoilt the rather calm environment</p>
+                                            </div>
+                                        </article>
+                                        <article class="d-flex pb-4 pt-3 border-box-details">
+                                            <div class="d-flex flex-wrap details-review-l">
+                                                <img src="../assets/images/avatar.jpg" alt="" class="p-1">
+                                                <p class="p-1"><b>Anonymous</b><br>Solo TravellerNorway <br>22/06/2016</p>
+                                            </div>
+                                            <div class="details-review-r">
+                                                <p class="review-pro">It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p>
+                                                <p class="review-con">noisy neigbourghs spoilt the rather calm environment</p>
+                                            </div>
+                                        </article>
+                                        <article class="d-flex pb-4 pt-3 border-box-details">
+                                            <div class="d-flex flex-wrap details-review-l">
+                                                <img src="../assets/images/avatar.jpg" alt="" class="p-1">
+                                                <p class="p-1"><b>Anonymous</b><br>Solo TravellerNorway <br>22/06/2016</p>
+                                            </div>
+                                            <div class="details-review-r">
+                                                <p class="review-pro">It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p>
+                                                <p class="review-con">noisy neigbourghs spoilt the rather calm environment</p>
+                                            </div>
+                                        </article>
+                                        <article class="d-flex pb-4 pt-3 border-box-details">
+                                            <div class="d-flex flex-wrap details-review-l">
+                                                <img src="../assets/images/avatar.jpg" alt="" class="p-1">
+                                                <p class="p-1"><b>Anonymous</b><br>Solo TravellerNorway <br>22/06/2016</p>
+                                            </div>
+                                            <div class="details-review-r">
+                                                <p class="review-pro">It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p>
+                                                <p class="review-con">noisy neigbourghs spoilt the rather calm environment</p>
+                                            </div>
+                                        </article>
+                                    </section>
+                                    <section class="main-details">
+                                        <article>
+                                            <h3>London</h3>
+                                            <img src="../assets/images/london1.jpg" alt="" class="pb-3">
+                                            <p class="pb-2"><strong>London is a diverse and exciting city with some of the best sights and attractions in the world. </strong></p>
+                                            <p class="pb-4">See London from above on the London Eye; meet a celebrity at Madame Tussauds; examine some of the world's most precious treasures at the British Museum or come face-to-face with the dinosaurs at the Natural History Museum.</p>
+                                        </article>
+                                        <article>
+                                            <h3>Sports and nature</h3>
+                                            <img src="../assets/images/london2.jpg" alt="" class="pb-3">
+                                            <p class="pb-2"><strong>London is a diverse and exciting city with some of the best sights and attractions in the world. </strong></p>
+                                            <p class="pb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
+                                        </article>
+                                        <article>
+                                            <h3>Nightlife</h3>
+                                            <img src="../assets/images/london1.jpg" alt="" class="pb-3">
+                                            <p class="pb-2"><strong>London is a diverse and exciting city with some of the best sights and attractions in the world. </strong></p>
+                                            <p class="pb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
+                                        </article>
+                                        <article>
+                                            <h3>Culture and history</h3>
+                                            <img src="../assets/images/london1.jpg" alt="" class="pb-3">
+                                            <p class="pb-2"><strong>London is a diverse and exciting city with some of the best sights and attractions in the world. </strong></p>
+                                            <p class="pb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
+                                        </article>
+                                </section>
+                                </div>
+                            <!-- </div> -->
                             </div>
-                        <!-- </div> -->
                         </div>
                     </div>
-                </div>
 
-                <div class="col-12 col-lg-3">
-                    <div class="article-offers article-details">
-                        <div class="text-center px-2 my-3 details">
-                            <h3>Best ipsum hotel <img src="../assets/images/4stars.png"></h3>
+                    <aside class="col-12 col-lg-3">
+                        <div class="article-offers article-details">
+                            <div class="text-center px-2 my-3 details">
+                                <h3>Best ipsum hotel <img src="../assets/images/4stars.png"></h3>
+                                <div class="d-flex">
+                                    <span class="address">Marylebone, London</span>
+                                    <span class="rating"> 8 /10</span>
+                                </div>
+                                <p class="article-details-p">The Best Ipsum hotel features over 1,000 luxuriously appointed,
+                                    individually styled rooms, suites and apartments, each containing unique works of art.</p>
+                            </div>
+                        </div>
+                        <div class="testimonials">
+                            <blockquote>Loved the staff and the location was just amazing... Perfect!” </blockquote>
+                            <span class="name">- Jane Doe, Solo Traveller</span>
+                        </div>
+                        <div class="widget-details">
+                            <h4>Need Help Booking?</h4>
+                            <p>Call our customer services team on the number below to speak to one of our advisors who will help
+                                you with all of your holiday needs.</p>
+                            <p class="number">1- 555 - 555 - 555</p>
+                        </div>
+                        <div class="widget-details ">
+                            <h4>Why Book with us?</h4>
+                            <h5>Low rates</h5>
+                            <p>Get the best rates, or get a refund.No booking fees. Save money!</p>
+                            <h5>Largest Selection</h5>
+                            <p>140,000+ hotels worldwide130+ airlinesOver 3 million guest reviews</p>
+                            <h5>We're Always Here</h5>
+                            <p>Call or email us, anytimeGet 24-hour support before, during, and after your trip</p>
+                        </div>
+                        <div class="widget-details widget-list">
+                            <h4>Popular hotels in the area</h4>
+                            <h5><a href="">Resort Hotel &amp; SPA</a> <img src="../assets/images/4stars.png"></h5>
                             <div class="d-flex">
-                                <span class="address">Marylebone, London</span>
+                                <span class="price">From $ 100 <small>/ per night</small></span>
+                                <span class="rating">8 /10</span>
+                            </div>
+                            <h5><a href="">Lorem Ipsum Inn</a> <img src="../assets/images/4stars.png"></h5>
+                            <div class="d-flex">
+                                <span class="price">From $ 110 <small>/ per night</small></span>
+                                <span class="rating"> 7 /10</span>
+                            </div>
+                            <h5><a href="">Best Eastern London</a> <img src="../assets/images/4stars.png"></h5>
+                            <div class="d-flex">
+                                <span class="price">From $ 125 <small>/ per night</small></span>
                                 <span class="rating"> 8 /10</span>
                             </div>
-                            <p class="article-details-p">The Best Ipsum hotel features over 1,000 luxuriously appointed,
-                                individually styled rooms, suites and apartments, each containing unique works of art.</p>
+                            <h5><a href="">Plaza Resort Hotel &amp; SPA</a> <img src="../assets/images/4stars.png"></h5>
+                            <div class="d-flex">
+                                <span class="price">From $ 100 <small>/ per night</small></span>
+                                <span class="rating"> 8 /10</span>
+                            </div>
+        
+        
+        
+        
+        
+                            <!-- <ul class="popular-hotels small-list">
+                                    <li>
+                                        <a href="#">
+                                            <h3>Plaza Resort Hotel &amp; SPA
+                                                <span class="stars">
+                                                    <i class="material-icons"></i>
+                                                    <i class="material-icons"></i>
+                                                    <i class="material-icons"></i>
+                                                    <i class="material-icons"></i>
+                                                </span>
+                                            </h3>
+                                            <p>From <span class="price">$ 100 <small>/ per night</small></span></p>
+                                            <span class="rating"> 8 /10</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <h3>Lorem Ipsum Inn
+                                                <span class="stars">
+                                                    <i class="material-icons"></i>
+                                                    <i class="material-icons"></i>
+                                                    <i class="material-icons"></i>
+                                                    <i class="material-icons"></i>
+                                                    <i class="material-icons"></i>
+                                                </span>
+                                            </h3>
+                                            <p>From <span class="price">$ 110 <small>/ per night</small></span></p>
+                                            <span class="rating"> 7 /10</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <h3>Best Eastern London
+                                                <span class="stars">
+                                                    <i class="material-icons"></i>
+                                                    <i class="material-icons"></i>
+                                                    <i class="material-icons"></i>
+                                                    <i class="material-icons"></i>
+                                                    <i class="material-icons"></i>
+                                                </span>
+                                            </h3>
+                                            <p>From <span class="price">$ 125 <small>/ per night</small></span></p>
+                                            <span class="rating"> 8 /10</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <h3>Plaza Resort Hotel &amp; SPA
+                                                <span class="stars">
+                                                    <i class="material-icons"></i>
+                                                    <i class="material-icons"></i>
+                                                    <i class="material-icons"></i>
+                                                    <i class="material-icons"></i>
+                                                </span>
+                                            </h3>
+                                            <p>From <span class="price">$ 100 <small>/ per night</small></span></p>
+                                            <span class="rating"> 8 /10</span>
+                                        </a>
+                                    </li>
+                                </ul> -->
+                            <a href="#" title="Show all" class="show-all">Show all</a>
                         </div>
-                    </div>
-                    <article class="testimonials">
-                        <blockquote>Loved the staff and the location was just amazing... Perfect!” </blockquote>
-                        <span class="name">- Jane Doe, Solo Traveller</span>
-                    </article>
-                    <article class="widget-details">
-                        <h4>Need Help Booking?</h4>
-                        <p>Call our customer services team on the number below to speak to one of our advisors who will help
-                            you with all of your holiday needs.</p>
-                        <p class="number">1- 555 - 555 - 555</p>
-                    </article>
-                    <article class="widget-details ">
-                        <h4>Why Book with us?</h4>
-                        <h5>Low rates</h5>
-                        <p>Get the best rates, or get a refund.No booking fees. Save money!</p>
-                        <h5>Largest Selection</h5>
-                        <p>140,000+ hotels worldwide130+ airlinesOver 3 million guest reviews</p>
-                        <h5>We're Always Here</h5>
-                        <p>Call or email us, anytimeGet 24-hour support before, during, and after your trip</p>
-                    </article>
-                    <article class="widget-details widget-list">
-                        <h4>Popular hotels in the area</h4>
-                        <h5><a href="">Resort Hotel &amp; SPA</a> <img src="../assets/images/4stars.png"></h5>
-                        <div class="d-flex">
-                            <span class="price">From $ 100 <small>/ per night</small></span>
-                            <span class="rating">8 /10</span>
+                        <div class="widget-details widget-list">
+                            <h4>Deal of the day</h4>
+                            <!-- <div class="deal-of-the-day"> -->
+                            <figure><a href="hotel.html"><img src="../assets/images/hotel2.jpg" alt=""></a></figure>
+                            <h5><a href="">Plaza Resort Hotel &amp; SPA</a> <img src="../assets/images/4stars.png"></h5>
+                            <div class="d-flex">
+                                <span class="price">From $ 100 <small>/ per night</small></span>
+                                <span class="rating"> 8 /10</span>
+                            </div>
+                            <!-- </div> -->
                         </div>
-                        <h5><a href="">Lorem Ipsum Inn</a> <img src="../assets/images/4stars.png"></h5>
-                        <div class="d-flex">
-                            <span class="price">From $ 110 <small>/ per night</small></span>
-                            <span class="rating"> 7 /10</span>
-                        </div>
-                        <h5><a href="">Best Eastern London</a> <img src="../assets/images/4stars.png"></h5>
-                        <div class="d-flex">
-                            <span class="price">From $ 125 <small>/ per night</small></span>
-                            <span class="rating"> 8 /10</span>
-                        </div>
-                        <h5><a href="">Plaza Resort Hotel &amp; SPA</a> <img src="../assets/images/4stars.png"></h5>
-                        <div class="d-flex">
-                            <span class="price">From $ 100 <small>/ per night</small></span>
-                            <span class="rating"> 8 /10</span>
-                        </div>
-    
-    
-    
-    
-    
-                        <!-- <ul class="popular-hotels small-list">
-    							<li>
-    								<a href="#">
-    									<h3>Plaza Resort Hotel &amp; SPA
-    										<span class="stars">
-    											<i class="material-icons"></i>
-    											<i class="material-icons"></i>
-    											<i class="material-icons"></i>
-    											<i class="material-icons"></i>
-    										</span>
-    									</h3>
-    									<p>From <span class="price">$ 100 <small>/ per night</small></span></p>
-    									<span class="rating"> 8 /10</span>
-    								</a>
-    							</li>
-    							<li>
-    								<a href="#">
-    									<h3>Lorem Ipsum Inn
-    										<span class="stars">
-    											<i class="material-icons"></i>
-    											<i class="material-icons"></i>
-    											<i class="material-icons"></i>
-    											<i class="material-icons"></i>
-    											<i class="material-icons"></i>
-    										</span>
-    									</h3>
-    									<p>From <span class="price">$ 110 <small>/ per night</small></span></p>
-    									<span class="rating"> 7 /10</span>
-    								</a>
-    							</li>
-    							<li>
-    								<a href="#">
-    									<h3>Best Eastern London
-    										<span class="stars">
-    											<i class="material-icons"></i>
-    											<i class="material-icons"></i>
-    											<i class="material-icons"></i>
-    											<i class="material-icons"></i>
-    											<i class="material-icons"></i>
-    										</span>
-    									</h3>
-    									<p>From <span class="price">$ 125 <small>/ per night</small></span></p>
-    									<span class="rating"> 8 /10</span>
-    								</a>
-    							</li>
-    							<li>
-    								<a href="#">
-    									<h3>Plaza Resort Hotel &amp; SPA
-    										<span class="stars">
-    											<i class="material-icons"></i>
-    											<i class="material-icons"></i>
-    											<i class="material-icons"></i>
-    											<i class="material-icons"></i>
-    										</span>
-    									</h3>
-    									<p>From <span class="price">$ 100 <small>/ per night</small></span></p>
-    									<span class="rating"> 8 /10</span>
-    								</a>
-    							</li>
-    						</ul> -->
-                        <a href="#" title="Show all" class="show-all">Show all</a>
-                    </article>
-                    <article class="widget-details widget-list">
-                        <h4>Deal of the day</h4>
-                        <!-- <div class="deal-of-the-day"> -->
-                        <figure><a href="hotel.html"><img src="../assets/images/hotel2.jpg" alt=""></a></figure>
-                        <h5><a href="">Plaza Resort Hotel &amp; SPA</a> <img src="../assets/images/4stars.png"></h5>
-                        <div class="d-flex">
-                            <span class="price">From $ 100 <small>/ per night</small></span>
-                            <span class="rating"> 8 /10</span>
-                        </div>
-                        <!-- </div> -->
-                    </article>
+                    </aside>
                 </div>
             </div>
         </div>
-    
     </main>
 
     <footer class="container-fluid bg-white">

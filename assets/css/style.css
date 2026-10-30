@@ -19,11 +19,18 @@ img {
   /* vertical-align: middle; */
   display: block;
 }
-h2 {
+h1, h2, h3, h4, h5 {
   font-family: "Roboto Slab", Verdana, Tahoma, sans-serif;
-  font-size: 26px;
   text-align: left;
-  font-weight: 900;
+  /* font-weight: bold; */
+}
+h1 {
+    font-size: 26px;
+    font-weight: 900;
+}
+h2 {
+    font-size: 24px;
+    font-weight: 800;
 }
 h3 {
     font-size: 22px;
@@ -55,11 +62,11 @@ body {
     background: #E9E6E0;
     margin-top: 0px;
 }
-h3, h4, h5 {
+ /* {
   font-family: 'Roboto Slab', serif;
     text-align: left;
-    font-weight: bold;
-}
+
+} */
 a {
     font-weight: 600;
     text-decoration: none;
@@ -106,8 +113,11 @@ header .ribbon {
   width: 104px;
   min-height: 90px;
   background: #5FC8C2 !important;
-  webkit-box-shadow: 1px 0 0 rgba(0,0,0,.1),-1px 0 0 rgba(0,0,0,.1);
-  -moz-box-shadow: 1px 0 0 rgba(0,0,0,.1),-1px 0 0 rgba(0,0,0,.1);
+  /* 
+  For very old versions of browsers that don't support box-shadow
+  In 2015 was already considered old, so this is not necessary for this project
+  -webkit-box-shadow: 1px 0 0 rgba(0,0,0,.1),-1px 0 0 rgba(0,0,0,.1);
+  -moz-box-shadow: 1px 0 0 rgba(0,0,0,.1),-1px 0 0 rgba(0,0,0,.1); */
   box-shadow: 1px 0 0 rgba(0,0,0,.1),-1px 0 0 rgba(0,0,0,.1);
 }
 .ribbon nav {
@@ -166,7 +176,48 @@ header .ribbon::before {
 .input-with-icon .headerSearch {
   min-width: 220px;
 }
-
+.input-with-icon input[type="submit"] {
+  /* z-index: 10;
+  width: 37px;
+  height: 37px; */
+  background: transparent;
+  border: none;
+  font-size: 0;
+  /*text-align: left;   */
+  cursor: pointer;
+  position: relative;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.input-with-icon input[type="submit"].searchSite {
+  background-image: url(../images/search_icon.png);
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  top: 3px;
+  padding-right: 10px;
+  right: 5px;
+}
+.input-with-icon input[type="submit"]:hover {
+    border: 2px solid #454545;
+    border-radius: 5px;
+}
+.input-with-icon input[type="submit"]:focus {
+  border: 2px solid rgba(0,0,0,.2);
+  border-radius: 5px;
+}
+.input-with-icon input[type="submit"].hasDatepicker {
+  background-image: url(../images/calendar.png);
+  background-repeat: no-repeat;
+  text-align: justify;
+  top: 7px;
+  width: 25px;
+  height: 25px;
+  /* padding: 2px; */
+  right: 2px;
+  /* padding-right: 10px; */
+}
 /* ------ main navigation ------ */
 header .navbar {
   max-width: 1170px;
@@ -202,6 +253,15 @@ header .navbar {
 .navbar ul li a {
   background: linear-gradient(to bottom, rgba(193, 182, 174, 1) 0%, rgba(186, 172, 163, 1) 100%);
 }
+.navbar-toggler {
+    background-color: black;
+}
+ 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
 /* ------ END main navigation ------ */
 /* --- End Formatting header  --- */
 /* ------------------------------ */
@@ -249,10 +309,10 @@ header .navbar {
   .paddingLeftSearch {
     padding-left: 7px;
   }
-  .input-with-icon input[type="image"].hasDatepicker {
-    padding: 6px 7px 6px 0px;
-    width: 22%;
-    height: 22%;
+  .input-with-icon input[type="submit"].hasDatepicker {
+    /*padding: 6px 7px 6px 0px;
+     width: 22%;
+    height: 22%; */
   }
   .boxSearchHalf label {
     padding-left: 5px;
@@ -318,9 +378,9 @@ header .navbar {
   .input-with-icon {
     background-color: white;
   }
-   .input-with-icon input[type="image"].hasDatepicker {
+   /* .input-with-icon input[type="submit"].hasDatepicker {
     padding: 6px 7px 6px 0px;
-  }
+  } */
   .boxSearchHalf label {
     padding-left: 5px;;
   }
@@ -356,7 +416,7 @@ header .navbar {
   }
   .main-search form {
     /* min-width: 600px;*/
-  }
+  } 
 }
 @media (max-width: 830px) {
   .formatFooterSm {
@@ -390,14 +450,14 @@ header .navbar {
 /* .main-search > form { */
 .wrapSearch {
     margin: 0 auto;
-    text-align: left;
-    /* width: 1170px; */
+    /* text-align: left;
+    width: 1170px; */
     max-width: 94%;
     position: relative;
 }
 .main-search form {
     z-index: 99;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 -10px;
     display: inline-block;
     padding: 15px 15px 10px;
@@ -474,9 +534,11 @@ input.inputSearch {
   font-weight: normal;
 }
 .main-search .gradient-button {
-    position: absolute;
-    left: 41.5%;
-    bottom: -1px;
+    position: relative;
+    /* left: 45%; */
+    bottom: -12px;
+    margin: 0 auto;
+    text-align: center;
     /* width: 17%; */
     height: 34px;
     border: none;
@@ -485,6 +547,11 @@ input.inputSearch {
     -moz-border-radius: 17px 17px 0 0;
     border-radius: 17px 17px 0 0;
 }
+.main-search input[type="submit"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* --- END Formatting main search --- */
 
 
@@ -492,7 +559,7 @@ input.inputSearch {
 /* -------- Generic elements, 
  ---------- Formatting forms and fields 
  ------------------------------------ */
-main, footer .container, .containerHeader, .main-nav-background {
+.main-class, footer .container, .containerHeader, .main-nav-background {
   max-width: 1170px;
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -520,15 +587,16 @@ label {
 }
 .input-with-icon input[type="search"] {
   margin-left: 14px;
+  padding: 7px 9px 5px 9px;
   vertical-align: baseline;
   /* line-height: 1.2;
   width: 70%; */
   border: 0px;
   color: #454545;
 }
-.input-with-icon input[type="image"] {
-  padding: 0px 8px 0px 0px;
-  /* width: 15%; */
+.input-with-icon input[type="submit"] {
+  /*  padding: 0px 8px 0px 0px;
+ width: 15%; */
 }
 
 div.checker input, input[type="search"], input[type="search"]:active {
@@ -594,6 +662,9 @@ button, input, select, textarea {
 .gradient-button:hover {
   background: linear-gradient(to top, #5FC8C2 0%,#41AFAA 100%);
 }
+.gradient-button:focus {
+  background: linear-gradient(to top, #5FC8C2 0%,#41AFAA 100%);
+}
 /* --- END Formatting forms and fields --- */
 /* ------------------------------ */
 
@@ -612,7 +683,7 @@ button, input, select, textarea {
 main {
   margin-bottom: 120px;
 }
-.main-h2 {
+.main-h2, .main-h3 {
   /* padding-left: 9px;*/
   margin-bottom: 50px;
   margin-top: 50px;
@@ -740,10 +811,10 @@ main {
   /* display: inline-block;
   padding: 60px 0 40px; */
   margin: 60px 0 0;
-  padding-top: 80px;
+  /* padding-top: 80px; */
   border-top: 1px solid rgba(255, 255, 255, 0.7);
-  -webkit-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+  /* -webkit-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15); */
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
 }
 .boxes article {
@@ -992,7 +1063,6 @@ footer {
 }
 .containerFooter p, .footerSupport ul li {
   line-height: 1.5em;
-  font-size: 0,9%;
 }
 .containerFooter a {
   text-decoration: none;
