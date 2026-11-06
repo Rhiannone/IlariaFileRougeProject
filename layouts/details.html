@@ -17,7 +17,6 @@
         <div class="container-fluid bg-white align-items-center">
         <!-- <div class="container border-test"> -->
         <div class="container mx-auto containerHeader">
-            <!-- <div class="d-flex flex-wrap">-->
             <div class="logo border-test"> 
                 <a href="../index.html" title="homepage for Book Your Travel">
                     <img src="../assets/images/logo.png" alt="company logo">
@@ -26,34 +25,34 @@
 
             <div class="headerEnd border-test">
                 <div class="contact">
-                <p>24/7 Support number</p>
-                <p class="number">1- 555 - 555 - 555</p>
+                    <p>24/7 Support number</p>
+                    <p class="number">1- 555 - 555 - 555</p>
                 </div>
                 <div class="search border-test">
-                <form id="search-form" method="get" action="search-form">
-                    <div class="input-with-icon">
-                        <input type="search" class="headerSearch" placeholder="Search entire site here" name="site_search" id="site_search">
-                        <input type="image" id="image" alt="Search icon" src="../assets/images/search_icon.png" />
-                    </div>
-                </form>
+                    <form id="search-form" method="get" action="search-form">
+                        <div class="input-with-icon">
+                            <input type="search" class="headerSearch" placeholder="Enter search term" name="site_search" aria-label="Enter search term">
+                            <input type="submit" class="searchSite"/>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="ribbon">
-                <nav>
+                <nav aria-label="little menu to access user account, switch currencies, switch between languages">
                     <ul class="profile-nav">
-                        <li class="active" style=""><a href="#" title="My Account">My Account</a></li>
+                        <li class="active"><a href="#" title="My Account">My Account</a></li>
                         <!-- <li style="display: none;"><a href="login.html" title="Login">Login</a></li>
                         <li style="display: none;"><a href="my_account.html" title="Settings">Settings</a></li> -->
                     </ul>
                     <ul class="lang-nav">
-                        <li class="active" style=""><a href="#" title="English (US)">English (US)</a></li>
+                        <li class="active"><a href="#" title="English (US)">English (US)</a></li>
                         <!-- <li style="display: none;"><a href="#" title="English (UK)">English (UK)</a></li>
                         <li style="display: none;"><a href="#" title="Deutsch">Deutsch</a></li>
                         <li style="display: none;"><a href="#" title="Italiano">Italiano</a></li>
                         <li style="display: none;"><a href="#" title="Русский">Русский</a></li> -->
                     </ul>
                     <ul class="currency-nav currency-nav-last">
-                        <li class="active" class="currency-nav-last"><a href="#" title="$US Dollar">$US Dollar</a></li>
+						<li class="active"><a href="#" title="$US Dollar">$US Dollar</a></li>
                         <!-- <li style="display: none;"><a href="#" title="€ Euro">€ Euro</a></li>
                         <li style="display: none;"><a href="#" title="£ Pound">£ Pound</a></li> -->
                     </ul>
@@ -64,9 +63,9 @@
         <!-- </div> -->
         </div>
 
-        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary p-0" aria-label="navigation principale">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0" aria-label="main navigation" data-bs-theme="dark">
             <div class="container-fluid main-nav-background">
-                <div class="container">
+                <div class="container d-flex">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -138,28 +137,25 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-9 px-2 my-3">
-                        <!-- <div class="p-5 bg-primary my-3 text-light">carousel and pictures below</div> -->
-        
-        
                         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="../assets/images/hotel4.jpg" class="d-block w-100" alt="...">
+                                    <img src="../assets/images/hotel4.webp" class="d-block w-100" alt="luxury apartment building overlooking a swimming pool">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../assets/images/hotel1.jpg" class="d-block w-100" alt="...">
+                                    <img src="../assets/images/hotel1.webp" class="d-block w-100" alt="hotel resort with swimming pool and view of the sea">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../assets/images/hotel2.jpg" class="d-block w-100" alt="...">
+                                    <img src="../assets/images/hotel2.jpg" class="d-block w-100" alt="deck chairs along side a swimming pool">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../assets/images/hotel5.jpg" class="d-block w-100" alt="...">
+                                    <img src="../assets/images/hotel3.webp" class="d-block w-100" alt="infinity pool with view of the ocean">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../assets/images/hotel3.jpg" class="d-block w-100" alt="...">
+                                    <img src="../assets/images/hotel5.webp" class="d-block w-100" alt="luxury hotel outdoor swimming pool">
                                 </div>  
                                 <div class="carousel-item">
-                                    <img src="../assets/images/hotel6.jpg" class="d-block w-100" alt="...">
+                                    <img src="../assets/images/hotel6.webp" class="d-block w-100" alt="luxury outdoor SPA swimming pool">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -177,7 +173,7 @@
                         <div class="container px-0">
                             <div class="row">
                                 <!-- <div class="d-flex">by default doesn't wrap -->
-                                <nav class="col-12 col-md-3 inner-details-space-top inner-nav">
+                                <nav class="col-12 col-md-3 inner-details-space-top inner-nav" aria-label="hotel information menu">
                                     <!-- <nav class="inner-nav"> -->
                                         <ul>
                                             <li class="availability active"><a href="#availability" title="Availability">Availability</a></li>
@@ -201,7 +197,7 @@
                                         <article class="container px-0">
                                             <div class="row border-box-details">
                                                 <div class="col-md-7 col-lg-5">
-                                                    <img src="../assets/images/room1.jpg" alt="...">
+                                                    <img src="../assets/images/room1.jpg" alt="luxury twin hotel room">
                                                     <!-- <p></p> -->
                                                 </div>
                                                 <div class="col-md-5 col-lg-7">
@@ -210,13 +206,13 @@
                                                             <h5>Superior Double Room</h5>
                                                             <p>Prices are per room20 % VAT Included in price</p>
                                                             <p class="padding-10-bottom">Non-refundableFull English breakfast $ 24.80</p>
-                                                            <a href="#" title="Explore our deals" class="gradient-button">More info</a>
+                                                            <a href="#" title="more information on this deal" class="gradient-button">More info</a>
                                                         </div>
                                                         <div class="room-short-info">
                                                             <p>Max: <img src="../assets/images/room2people.png" alt="..."></p>
                                                             <p>Price: $ 55</p>
                                                             <p class="padding-10-bottom">Rooms: 01</p>
-                                                            <a href="#" title="Explore our deals" class="gradient-button">Book now</a>
+                                                            <a href="#" title="book this room" class="gradient-button">Book now</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -225,7 +221,7 @@
                                         <articel class="container px-0">
                                             <div class="row border-box-details">
                                                 <div class="col-md-7 col-lg-5">
-                                                    <img src="../assets/images/room2.jpg" alt="...">
+                                                    <img src="../assets/images/room2.jpg" alt="luxury twin hotel room">
                                                     <!-- <p></p> -->
                                                 </div>
                                                 <div class="col-md-5 col-lg-7">
@@ -234,13 +230,13 @@
                                                             <h5>Deluxe Single Room</h5>
                                                             <p>Prices are per room20 % VAT Included in price</p>
                                                             <p class="padding-10-bottom">Non-refundableFull English breakfast $ 24.80</p>
-                                                            <a href="#" title="Explore our deals" class="gradient-button">More info</a>
+                                                            <a href="#" title="more information on this deal" class="gradient-button">More info</a>
                                                         </div>
                                                         <div class="room-short-info">
                                                             <p>Max: <img src="../assets/images/room1person.png" alt="..."></p>
                                                             <p>Price: $ 55</p>
                                                             <p class="padding-10-bottom">Rooms: 01</p>
-                                                            <a href="#" title="Explore our deals" class="gradient-button">Book now</a>
+                                                            <a href="#" title="book this room" class="gradient-button">Book now</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -249,7 +245,7 @@
                                         <articel class="container px-0">
                                             <div class="row border-box-details">
                                                 <div class="col-md-7 col-lg-5">
-                                                    <img src="../assets/images/room1.jpg" alt="...">
+                                                    <img src="../assets/images/room1.jpg" alt="luxury twin hotel room">
                                                     <!-- <p></p> -->
                                                 </div>
                                                 <div class="col-md-5 col-lg-7">
@@ -258,13 +254,13 @@
                                                             <h5>Superior Double Room</h5>
                                                             <p>Prices are per room20 % VAT Included in price</p>
                                                             <p class="padding-10-bottom">Non-refundableFull English breakfast $ 24.80</p>
-                                                            <a href="#" title="Explore our deals" class="gradient-button">More info</a>
+                                                            <a href="#" title="more information on this deal" class="gradient-button">More info</a>
                                                         </div>
                                                         <div class="room-short-info">
                                                             <p>Max: <img src="../assets/images/room3people.png" alt="..."></p>
                                                             <p>Price: $ 55</p>
                                                             <p class="padding-10-bottom">Rooms: 01</p>
-                                                            <a href="#" title="Explore our deals" class="gradient-button">Book now</a>
+                                                            <a href="#" title="book this room" class="gradient-button">Book now</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -273,7 +269,7 @@
                                         <articel class="container px-0">
                                             <div class="row border-box-details">
                                                 <div class="col-md-7 col-lg-5">
-                                                    <img src="../assets/images/room2.jpg" alt="...">
+                                                    <img src="../assets/images/room2.jpg" alt="luxury twin hotel room">
                                                     <!-- <p></p> -->
                                                 </div>
                                                 <div class="col-md-5 col-lg-7">
@@ -282,13 +278,13 @@
                                                             <h5>Superior Double Room</h5>
                                                             <p>Prices are per room20 % VAT Included in price</p>
                                                             <p class="padding-10-bottom">Non-refundableFull English breakfast $ 24.80</p>
-                                                            <a href="#" title="Explore our deals" class="gradient-button">More info</a>
+                                                            <a href="#" title="more information on this deal" class="gradient-button">More info</a>
                                                         </div>
                                                         <div class="room-short-info">
                                                             <p>Max: <img src="../assets/images/room2people.png" alt="..."></p>
                                                             <p>Price: $ 55</p>
                                                             <p class="padding-10-bottom">Rooms: 01</p>
-                                                            <a href="#" title="Explore our deals" class="gradient-button">Book now</a>
+                                                            <a href="#" title="book this room" class="gradient-button">Book now</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -345,7 +341,7 @@
                                         <h3>Guest reviews</h3>
                                         <article class="d-flex pb-4 pt-3 border-box-details">
                                             <div class="d-flex flex-wrap details-review-l">
-                                                <img src="../assets/images/avatar.jpg" alt="" class="p-1">
+                                                <img src="../assets/images/avatar.jpg" alt="avatar testimonia" class="p-1">
                                                 <p class="p-1"><b>Anonymous</b><br>Solo TravellerNorway <br>22/06/2016</p>
                                             </div>
                                             <div class="details-review-r">
@@ -355,7 +351,7 @@
                                         </article>
                                         <article class="d-flex pb-4 pt-3 border-box-details">
                                             <div class="d-flex flex-wrap details-review-l">
-                                                <img src="../assets/images/avatar.jpg" alt="" class="p-1">
+                                                <img src="../assets/images/avatar.jpg" alt="avatar testimonial" class="p-1">
                                                 <p class="p-1"><b>Anonymous</b><br>Solo TravellerNorway <br>22/06/2016</p>
                                             </div>
                                             <div class="details-review-r">
@@ -365,7 +361,7 @@
                                         </article>
                                         <article class="d-flex pb-4 pt-3 border-box-details">
                                             <div class="d-flex flex-wrap details-review-l">
-                                                <img src="../assets/images/avatar.jpg" alt="" class="p-1">
+                                                <img src="../assets/images/avatar.jpg" alt="avatar testimonia" class="p-1">
                                                 <p class="p-1"><b>Anonymous</b><br>Solo TravellerNorway <br>22/06/2016</p>
                                             </div>
                                             <div class="details-review-r">
@@ -375,7 +371,7 @@
                                         </article>
                                         <article class="d-flex pb-4 pt-3 border-box-details">
                                             <div class="d-flex flex-wrap details-review-l">
-                                                <img src="../assets/images/avatar.jpg" alt="" class="p-1">
+                                                <img src="../assets/images/avatar.jpg" alt="avatar testimonia" class="p-1">
                                                 <p class="p-1"><b>Anonymous</b><br>Solo TravellerNorway <br>22/06/2016</p>
                                             </div>
                                             <div class="details-review-r">
@@ -385,7 +381,7 @@
                                         </article>
                                         <article class="d-flex pb-4 pt-3 border-box-details">
                                             <div class="d-flex flex-wrap details-review-l">
-                                                <img src="../assets/images/avatar.jpg" alt="" class="p-1">
+                                                <img src="../assets/images/avatar.jpg" alt="avatar testimonia" class="p-1">
                                                 <p class="p-1"><b>Anonymous</b><br>Solo TravellerNorway <br>22/06/2016</p>
                                             </div>
                                             <div class="details-review-r">
@@ -397,25 +393,25 @@
                                     <section class="main-details">
                                         <article>
                                             <h3>London</h3>
-                                            <img src="../assets/images/london1.jpg" alt="" class="pb-3">
+                                            <img src="../assets/images/london1.webp" alt="London Big Ben and the Thames" class="pb-3">
                                             <p class="pb-2"><strong>London is a diverse and exciting city with some of the best sights and attractions in the world. </strong></p>
                                             <p class="pb-4">See London from above on the London Eye; meet a celebrity at Madame Tussauds; examine some of the world's most precious treasures at the British Museum or come face-to-face with the dinosaurs at the Natural History Museum.</p>
                                         </article>
                                         <article>
                                             <h3>Sports and nature</h3>
-                                            <img src="../assets/images/london2.jpg" alt="" class="pb-3">
+                                            <img src="../assets/images/london2.webp" alt="A park with nice garden in London" class="pb-3">
                                             <p class="pb-2"><strong>London is a diverse and exciting city with some of the best sights and attractions in the world. </strong></p>
                                             <p class="pb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
                                         </article>
                                         <article>
                                             <h3>Nightlife</h3>
-                                            <img src="../assets/images/london1.jpg" alt="" class="pb-3">
+                                            <img src="../assets/images/london3.jpg" alt="A music festival" class="pb-3">
                                             <p class="pb-2"><strong>London is a diverse and exciting city with some of the best sights and attractions in the world. </strong></p>
                                             <p class="pb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
                                         </article>
                                         <article>
                                             <h3>Culture and history</h3>
-                                            <img src="../assets/images/london1.jpg" alt="" class="pb-3">
+                                            <img src="../assets/images/london4.jpg" alt="a view of the Queens gards" class="pb-3">
                                             <p class="pb-2"><strong>London is a diverse and exciting city with some of the best sights and attractions in the world. </strong></p>
                                             <p class="pb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
                                         </article>
@@ -429,7 +425,7 @@
                     <aside class="col-12 col-lg-3">
                         <div class="article-offers article-details">
                             <div class="text-center px-2 my-3 details">
-                                <h3>Best ipsum hotel <img src="../assets/images/4stars.png"></h3>
+                                <h3>Best ipsum hotel <img src="../assets/images/4stars.png" alt="4 star hotel"></h3>
                                 <div class="d-flex">
                                     <span class="address">Marylebone, London</span>
                                     <span class="rating"> 8 /10</span>
@@ -438,10 +434,10 @@
                                     individually styled rooms, suites and apartments, each containing unique works of art.</p>
                             </div>
                         </div>
-                        <div class="testimonials">
+                        <article class="testimonials">
                             <blockquote>Loved the staff and the location was just amazing... Perfect!” </blockquote>
                             <span class="name">- Jane Doe, Solo Traveller</span>
-                        </div>
+                        </article>
                         <div class="widget-details">
                             <h4>Need Help Booking?</h4>
                             <p>Call our customer services team on the number below to speak to one of our advisors who will help
@@ -459,22 +455,22 @@
                         </div>
                         <div class="widget-details widget-list">
                             <h4>Popular hotels in the area</h4>
-                            <h5><a href="">Resort Hotel &amp; SPA</a> <img src="../assets/images/4stars.png"></h5>
+                            <h5><a href="">Resort Hotel &amp; SPA</a> <img src="../assets/images/4stars.png"  alt="4 star hotel"></h5>
                             <div class="d-flex">
                                 <span class="price">From $ 100 <small>/ per night</small></span>
                                 <span class="rating">8 /10</span>
                             </div>
-                            <h5><a href="">Lorem Ipsum Inn</a> <img src="../assets/images/4stars.png"></h5>
+                            <h5><a href="">Lorem Ipsum Inn</a> <img src="../assets/images/4stars.png"  alt="4 star hotel"></h5>
                             <div class="d-flex">
                                 <span class="price">From $ 110 <small>/ per night</small></span>
                                 <span class="rating"> 7 /10</span>
                             </div>
-                            <h5><a href="">Best Eastern London</a> <img src="../assets/images/4stars.png"></h5>
+                            <h5><a href="">Best Eastern London</a> <img src="../assets/images/4stars.png"  alt="4 star hotel"></h5>
                             <div class="d-flex">
                                 <span class="price">From $ 125 <small>/ per night</small></span>
                                 <span class="rating"> 8 /10</span>
                             </div>
-                            <h5><a href="">Plaza Resort Hotel &amp; SPA</a> <img src="../assets/images/4stars.png"></h5>
+                            <h5><a href="">Plaza Resort Hotel &amp; SPA</a> <img src="../assets/images/4stars.png" alt="4 star hotel"></h5>
                             <div class="d-flex">
                                 <span class="price">From $ 100 <small>/ per night</small></span>
                                 <span class="rating"> 8 /10</span>
@@ -549,8 +545,8 @@
                         <div class="widget-details widget-list">
                             <h4>Deal of the day</h4>
                             <!-- <div class="deal-of-the-day"> -->
-                            <figure><a href="hotel.html"><img src="../assets/images/hotel2.jpg" alt=""></a></figure>
-                            <h5><a href="">Plaza Resort Hotel &amp; SPA</a> <img src="../assets/images/4stars.png"></h5>
+                            <figure><a href="hotel.html"><img src="../assets/images/hotel2.jpg" alt="deck chairs along side a swimming pool"></a></figure>
+                            <h5><a href="">Plaza Resort Hotel &amp; SPA</a> <img src="../assets/images/4stars.png"  alt="4 star hotel"></h5>
                             <div class="d-flex">
                                 <span class="price">From $ 100 <small>/ per night</small></span>
                                 <span class="rating"> 8 /10</span>
@@ -566,36 +562,38 @@
     <footer class="container-fluid bg-white">
         <div class="container">
             <div class="containerFooter">
-            <div class="row">
+                <div class="row formatFooterSm">
                 <div class="col-12 col-md-3 text-start footerContact footerBoxes">
 					<h4>Book Your Travel</h4>
 					<p>1400 PennsylSUVia Ave. Washington, DC</p>
-					<p><span>P:</span> 24/7 customer support: 1-555-555-5555</p>
-					<p><span>E:</span> <a href="#" title="booking@mail.com">booking@mail.com</a></p>				
+                        <p><span>P:</span> 24/7 customer support: <a href="tel:1-555-555-555" aria-label="Call us at 1-555-555-555">1-555-555-5555</a></p>
+                        <p><span>E:</span> <a href="mailto:booking@mail.com" title="send an email to the booking department">booking@mail.com</a></p>				
                 </div>
                 <div class="col-12 col-md-3 text-start footerSupport footerBoxes">
-                    <nav>
 					<h4>Customer support</h4>
-					<ul>
-						<li><a href="#" title="Faq">Faq</a></li>
-						<li><a href="#" title="How do I make a reservation?">How do I make a reservation?</a></li>
-						<li><a href="#" title="Payment options">Payment options</a></li>
-						<li><a href="#" title="Booking tips">Booking tips</a></li>
-					</ul>
-				
+                    <nav aria-label="useful and informative links">
+                        <ul>
+                            <li><a href="#" title="Faq" aria-label="A list of frequently asked questions">Faq</a></li>
+                            <li><a href="#" title="How do I make a reservation?" aria-label="Information on how to make a reservation">How do I make a reservation?</a></li>
+                            <li><a href="#" title="Payment options" aria-label="Payment options information">Payment options</a></li>
+                            <li><a href="#" title="Booking tips" aria-label="Booking tips">Booking tips</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="col-12 col-md-3 text-start footerBoxes">
 					<h4>Follow us</h4>
+                        <nav aria-label="social media and RSS navigation">
 					<ul class="social">
-                        <li><a href="#" title="facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#" title="youtube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
-                        <li><a href="#" title="rss"><i class="fa fa-fw fa-rss" aria-hidden="true"></i></a></li>
-                        <li><a href="#" title="gplus"><i class="fa-brands fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#" title="linkedin"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="#" title="twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#" title="pinterest"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a></li>
-                        <li><a href="#" title="vimeo"><i class="fa-brands fa-vimeo" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="facebook" aria-label="Visite our Facebook page"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="youtube" aria-label="Watch our YouTube company presentation"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="rss" aria-label="Get our RSS feed and updates"><i class="fa fa-fw fa-rss" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="gplus" aria-label="Visite our Google plus page"><i class="fa-brands fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="linkedin" aria-label="Visite our LinkedIn page"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="twitter" aria-label="Visite our Twitter page"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="pinterest" aria-label="Visite our Pinterest page"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="vimeo" aria-label="Vimeo"><i class="fa-brands fa-vimeo" aria-hidden="true"></i></a></li>
                     </ul>				
+                        </nav>
                 </div>
                 <div class="col-12 col-md-3 text-start footerBoxes">
 					<h4>Don't miss our exclusive offers</h4>
@@ -605,7 +603,6 @@
 							<input type="submit" id="newsletter_submit" name="newsletter_submit" value="Signup" class="gradient-button">
 						</fieldset>
 					</form>
-				
                 </div>
             </div>
         </div>
@@ -613,19 +610,19 @@
         <div class="container footerNav my-auto">
             <div class="row">
                 <div class="col-12 col-lg-4 text-start">
-                    <p class="copy">Copyright 2016 Book your travel ltd. All rights reserved</p>			
+                    <p>Copyright 2016 Book your travel ltd. All rights reserved</p>			
                 </div>
                 <div class="col-12 col-lg-8 text-end">
-                    <nav>
+                    <nav aria-label="footer main navigation with company related information">
 						<ul>
-							<li><a href="#" title="About us">About us</a></li>
-							<li><a href="contact.html" title="Contact">Contact</a></li>
-							<li><a href="#" title="Partners">Partners</a></li>
-							<li><a href="#" title="Customer service">Customer service</a></li>
-							<li><a href="#" title="FAQ">FAQ</a></li>
-							<li><a href="#" title="Careers">Careers</a></li>
-							<li><a href="#" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
-							<li><a href="#" title="Privacy statement">Privacy statement</a></li>
+                            <li><a href="#" title="About us" aria-label="Company Profile">About us</a></li>
+                            <li><a href="contact.html" title="Contact" aria-label="Contact details and contact form">Contact</a></li>
+                            <li><a href="#" title="Partners" aria-label="Complete list of company partners">Partners</a></li>
+                            <li><a href="#" title="Customer service" aria-label="Customer service contact details and contact form">Customer service</a></li>
+                            <li><a href="#" title="FAQ" aria-label="List of frequently asked questions">FAQ</a></li>
+                            <li><a href="#" title="Careers" aria-label="Employment oportunities with Book Your Travel">Careers</a></li>
+                            <li><a href="#" title="Terms &amp; Conditions" aria-label="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+                            <li><a href="#" title="Privacy statement" aria-label="Privacy statement">Privacy statement</a></li>
 						</ul>
 					</nav>				
                 </div>                
@@ -633,9 +630,15 @@
         </div>
     </footer>
 
+
+
+
+
+
+
     <!-- <h1>Hello, world!</h1> -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>

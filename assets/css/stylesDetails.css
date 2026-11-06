@@ -67,6 +67,7 @@
 .widget-details h4, .main-details h3, .border-box-details {
     border-bottom: 1px solid #ccc;
 }
+
 .main-details h3.space-above {
     padding-top: 20px;
 }

@@ -291,7 +291,7 @@ header .navbar {
   }
   .main-search form {
     position: absolute;
-    top: -280px;
+    top: -330px;
     left: 0;
     /* min-width: 1070px; */
   }
@@ -482,7 +482,9 @@ header .navbar {
     font-weight: 900;
     color: #41AFAA;
 }
-
+.columnSearch {
+  text-align: left;
+}
 /* 
 https://www.geeksforgeeks.org/css/how-to-change-the-color-of-radio-buttons-using-css/
 
